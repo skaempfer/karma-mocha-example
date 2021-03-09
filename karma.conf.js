@@ -10,13 +10,21 @@ module.exports = function (config) {
     karmaTypescriptConfig: {
         tsconfig: "./tsconfig.json",
     },
-    reporters: ["mocha"],
+    reporters: ["mocha", "hooray"],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: false,
     browsers: [
       "ChromeHeadless",
+    ],
+    plugins: [
+      "karma-chai",
+      "karma-chrome-launcher",
+      "karma-mocha",
+      "karma-mocha-reporter",
+      "karma-typescript",
+      require("./karma-hooray-reporter")
     ],
     customLaunchers: {
       "ChromeHeadless": {
