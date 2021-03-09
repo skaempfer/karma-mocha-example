@@ -1,0 +1,22 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+      "outDir": "out",
+      "module": "commonjs",
+      "typeRoots": [
+        "./node_modules/@types"
+      ],
+      "removeComments": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "target": "ES2015",
+      "esModuleInterop": true,
+      "lib": ["ES2015"],
+      "moduleResolution": "node",
+      "baseUrl": "src",
+      "resolveJsonModule": true,
+      "allowJs": true
+    },
+    "include": ["src"]
+  }
