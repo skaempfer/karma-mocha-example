@@ -1,6 +1,7 @@
 module.exports = function (config) {
   config.set({
-    frameworks: [ "mocha", "karma-typescript" ],
+    //frameworks: [ "mocha", "karma-typescript" ],
+    frameworks: [ "jasmine", "karma-typescript" ],
     files: [
       { pattern: "src/**/*.ts" }
     ],
@@ -20,7 +21,8 @@ module.exports = function (config) {
     ],
     plugins: [
       "karma-chrome-launcher",
-      "karma-mocha",
+      //"karma-mocha",
+      "karma-jasmine",
       "karma-mocha-reporter",
       "karma-typescript",
       require("./karma-hooray-reporter")
