@@ -19,9 +19,6 @@ config.set({
     ...
     frameworks: [ "mocha", "karma-typescript" ],
     //frameworks: [ "jasmine", "karma-typescript" ],
-    files: [
-        { pattern: "src/**/*.ts" }
-    ],
     ...
     plugins: [
         ...
@@ -40,10 +37,6 @@ config.set({
     ...
     //frameworks: [ "mocha", "karma-typescript" ],
     frameworks: [ "jasmine", "karma-typescript" ],
-    files: [
-        { pattern: "src/**/*.ts" }
-    ],
-    ...
     plugins: [
         ...
         //"karma-mocha",
